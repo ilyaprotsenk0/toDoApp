@@ -1,0 +1,45 @@
+body {
+    background-color: hsl(235, 21%, 11%);
+}
+
+.top-bg {
+    background: url("../images/bg-desktop-dark.jpg");
+}
+
+#change-theme {
+    background: url("../images/icon-sun.svg") no-repeat center;
+}
+
+.app-input-todo, .todo-item {
+    background-color: hsl(235, 24%, 19%);
+}
+
+#to-do-items-block input[type=checkbox]:checked + label {
+    color: hsl(233, 14%, 35%);
+}
+
+.footer {
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 11%, 52%);
+}
+
+#new-item-input {
+    background-color: initial;
+}
+
+#new-item-input, .todo-item {
+    color: hsl(234, 39%, 85%);
+}
+
+#add-item {
+    background-color: initial;
+    border: 2px solid hsl(237, 14%, 26%);
+}
+
+.filters span:hover, #clear-completed:hover {
+    color: hsl(236, 33%, 92%);
+}
+
+.todo-item {
+    border-bottom: 1px solid hsl(237, 14%, 26%);
+}

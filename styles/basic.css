@@ -1,0 +1,148 @@
+body {
+    margin: 0px;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.top-bg {
+    width: 1440px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+main {
+    width: 540px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 50px 0px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 16px;
+    margin: 0px;
+}
+
+#change-theme {
+    width: 30px;
+    height: 30px;
+}
+
+.app-input-todo {
+    height: 65px;
+    margin: 0px 0px 25px 0px;
+}
+
+.app-input-todo {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+#new-item-input {
+    outline: none;
+    border: none;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#add-item {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+}
+
+#add-item:hover {
+    background-color: rgba(40, 180, 40, 0.5);
+}
+
+.todo-item {
+    height: 65px;
+}
+
+.todo-items-container {
+    padding: 0px;
+    margin: 0px;
+}
+
+.todo-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.todo-item:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.todo-item label {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.delete-todo-item {
+    width: 20px;
+    height: 20px;
+    background: url("../images/icon-cross.svg") no-repeat center;
+    display: none;
+}
+
+.todo-item-check-label-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.filters span {
+    font-weight: 700;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.active-mode {
+    color: hsl(220, 98%, 61%);
+}
+
+.hidden {
+    display: none;
+}
+
+
+#to-do-items-block input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+}
+
+.shadow {
+    box-shadow: 0px 0px 50px 0px rgba(34, 60, 80, 0.2);
+}
+
+.todo-item:hover  .delete-todo-item {
+    display: block;
+}

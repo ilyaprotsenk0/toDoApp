@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/basic.css">
+  <!-- <link rel="stylesheet" href="styles/light-theme.css"> -->
+  <link rel="stylesheet" href="styles/dark-theme.css" id="theme-switch">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Practice #2 | Todo app</title>
+
+</head>
+<body>
+  <div class="top-bg"></div>
+  <main>
+    <section class="app-header">
+      <h1>TODO</h1>
+      <div id="change-theme"></div>
+    </section>
+    <section class="app-input-todo">
+      <input type="button" id="add-item">
+      <input type="text" placeholder="Create a new todo..." id="new-item-input">
+    </section>
+    <div class="shadow">
+      <section class="app-todo-tasks" id="to-do-items-block">
+      </section>
+      <section class="footer">
+        <span id="items-left-count">N items left</span>
+        <div class="filters">
+          <span id="all-items" data-mode="all">All</span>
+          <span id="active-items" data-mode="active">Active</span>
+          <span id="completed-items" data-mode="completed">Completed</span>
+        </div>
+        <span id="clear-completed">Clear Completed</span>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.top-bg {
+    background: url("../images/bg-desktop-light.jpg");
+}
+
+#change-theme {
+    background: url("../images/icon-moon.svg") no-repeat center;
+}
+
+.app-input-todo, .todo-item {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#to-do-items-block input[type=checkbox]:checked + label {
+    color: hsl(233, 11%, 84%);
+}
+
+.footer {
+    color: hsl(236, 9%, 61%);
+    background-color: white;
+}
+
+.filters span:hover, #clear-completed:hover, #new-item-input, .todo-item {
+    color: hsl(235, 19%, 35%);
+}
+
+#add-item {
+    background-color: white;
+    border: 2px solid lightgray;
+}
+
+.todo-item {
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+}
